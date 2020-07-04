@@ -1,0 +1,14 @@
+{
+  "name": "Auto Resume Download",
+  "version": "1.0",
+  "description": "Automatically resume failed downloads due to network errors.",
+  "permissions": ["storage", "downloads"],
+  "background": {
+    "scripts": ["./downloader/downloader.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "/downloader/popup.html"
+  },
+  "manifest_version": 2
+}
